@@ -1,0 +1,49 @@
+{
+  "name": "project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.2.6",
+    "@google/generative-ai": "^0.24.1",
+    "antd": "^5.12.8",
+    "axios": "^1.6.5",
+    "bcryptjs": "^2.4.3",
+    "compromise": "^14.14.4",
+    "compromise-sentences": "^0.3.0",
+    "crypto": "^1.0.1",
+    "docx": "^8.5.0",
+    "googleapis": "^129.0.0",
+    "jose": "^6.0.11",
+    "jsonwebtoken": "^9.0.2",
+    "mammoth": "^1.9.0",
+    "memory-cache": "^0.2.0",
+    "mongoose": "^8.9.6",
+    "natural": "^8.0.1",
+    "next": "14.0.4",
+    "node-cache": "^5.1.2",
+    "node-summarizer": "^1.0.7",
+    "pdf-parse": "^1.1.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-markdown": "^9.0.3",
+    "remark-gfm": "^4.0.0",
+    "wink-eng-lite-web-model": "^1.8.1",
+    "wink-nlp": "^2.3.2",
+    "youtube-captions-scraper": "^2.0.0",
+    "youtube-dl-exec": "^2.5.6",
+    "youtube-transcript": "^1.2.1",
+    "youtube-transcript-api": "^1.1.2",
+    "ytdl-core": "^4.11.5"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.8",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "14.0.4"
+  }
+}

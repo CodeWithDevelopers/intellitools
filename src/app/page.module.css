@@ -1,0 +1,189 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  /* background: linear-gradient(30deg, #e7f2ff, #f4e7ff); */
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.heroText {
+  flex: 1;
+  min-width: 280px;
+}
+
+.heroText h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.gradientText {
+  background: linear-gradient(90deg, #5d00ff, #9f65ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroText p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.heroImage {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.heroImage img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.tools {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.tools h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  color: #7d28fc;
+}
+
+.why {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.why h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.professionals {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.professionals h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.faqs {
+  margin-bottom: 4rem;
+}
+
+.faqs h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.footer {
+  background: #f8f8f8;
+  padding: 3rem 1rem;
+  text-align: left;
+  border-top: 1px solid #eee;
+}
+
+.footer h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer p,
+.footer li {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer a {
+  color: #7d28fc;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #888;
+}
+.toolCard {
+  transition: transform 0.3s ease;
+}
+
+.toolCard:hover {
+  transform: translateY(-5px);
+}
+
+.toolCard {
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardContent {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.icon {
+  font-size: 2rem;
+  padding-top: 4px;
+}
+
+.textContent {
+  flex: 1;
+}
+
+.textContent h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.textContent p {
+  color: #666;
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}

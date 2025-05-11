@@ -1,0 +1,227 @@
+/* .footer {
+  background: #001529;
+  padding: 60px 0 20px;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.section h3 {
+  color: #1890ff;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.about {
+  max-width: 300px;
+}
+
+.about p {
+  color: #ffffff99;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 16px;
+}
+
+.socialIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.socialIcon:hover {
+  background: #1890ff;
+  transform: translateY(-3px);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.links a {
+  color: #ffffff99;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #1890ff;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #ffffff1a;
+  color: #ffffff99;
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about {
+    max-width: 100%;
+  }
+
+  .footer {
+    padding: 40px 0 20px;
+  }
+} */
+
+
+.footer {
+  background-color: #f7f5ff;
+  padding: 20px 40px;
+  border-top: 1px solid #e5e5e5;
+  color: #3a3aff;
+  font-family: 'Inter', sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #3a3aff;
+  cursor: pointer;
+}
+
+.heading {
+  font-weight: 600;
+  margin-bottom: 16px;
+  font-size: 1rem;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkList li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.text {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.bottom {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #3a3aff;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.links {
+  margin-top: 6px;
+  color: #3a3aff;
+}
+
+.links a {
+  color: #3a3aff;
+  text-decoration: none;
+  margin: 0 6px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.contact {
+  margin-bottom: 1rem;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.faqContainer {
+  /* Local scope - required by Next.js */
+  margin-bottom: 4rem;
+}
+
+.faqContainer :global(.ant-collapse-item) {
+  border-radius: 8px !important;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.faqContainer :global(.ant-collapse-header) {
+  font-weight: 500;
+  font-size: 16px;
+  padding: 12px 16px !important;
+}
+
+.faqContainer :global(.ant-collapse-content-box) {
+  padding: 0 16px 16px;
+}
