@@ -259,75 +259,75 @@ export default function WordPage() {
         </div>
       ),
     },
-    {
-      key: '3',
-      label: (
-        <span>
-          <QuestionCircleOutlined /> Ask Questions
-        </span>
-      ),
-      children: (
-        <div className={styles.questionSection}>
-          {!analysisResults ? (
-            <Empty
-              image={Empty.PRESENTED_IMAGE_SIMPLE}
-              description="Please upload and analyze a document first"
-            />
-          ) : (
-            <>
-              <div className={styles.questionInput}>
-                <TextArea
-                  placeholder="Ask any question about your document..."
-                  value={question}
-                  onChange={e => setQuestion(e.target.value)}
-                  autoSize={{ minRows: 2, maxRows: 4 }}
-                  disabled={askingQuestion}
-                />
-                <Button
-                  style={{ marginTop: '1rem', minWidth: '100%' }}
-                  type="primary"
-                  icon={<SendOutlined />}
-                  onClick={handleAskQuestion}
-                  loading={askingQuestion}
-                  disabled={!question.trim()}
-                >
-                  Ask Question
-                </Button>
-              </div>
+    // {
+    //   key: '3',
+    //   label: (
+    //     <span>
+    //       <QuestionCircleOutlined /> Ask Questions
+    //     </span>
+    //   ),
+    //   children: (
+    //     <div className={styles.questionSection}>
+    //       {!analysisResults ? (
+    //         <Empty
+    //           image={Empty.PRESENTED_IMAGE_SIMPLE}
+    //           description="Please upload and analyze a document first"
+    //         />
+    //       ) : (
+    //         <>
+    //           <div className={styles.questionInput}>
+    //             <TextArea
+    //               placeholder="Ask any question about your document..."
+    //               value={question}
+    //               onChange={e => setQuestion(e.target.value)}
+    //               autoSize={{ minRows: 2, maxRows: 4 }}
+    //               disabled={askingQuestion}
+    //             />
+    //             <Button
+    //               style={{ marginTop: '1rem', minWidth: '100%' }}
+    //               type="primary"
+    //               icon={<SendOutlined />}
+    //               onClick={handleAskQuestion}
+    //               loading={askingQuestion}
+    //               disabled={!question.trim()}
+    //             >
+    //               Ask Question
+    //             </Button>
+    //           </div>
               
-              <div className={styles.questionHistory}>
-                <Title level={4}>Question History</Title>
-                {questionHistory.length === 0 ? (
-                  <Empty
-                    image={Empty.PRESENTED_IMAGE_SIMPLE}
-                    description="No questions asked yet"
-                  />
-                ) : (
-                  <List
-                    className={styles.questionList}
-                    itemLayout="vertical"
-                    dataSource={questionHistory}
-                    renderItem={item => (
-                      <List.Item>
-                        <div className={styles.questionItem}>
-                          <div className={styles.questionHeader}>
-                            <Text strong>Q: {item.question}</Text>
-                            <Text type="secondary">{item.timestamp}</Text>
-                          </div>
-                          <div className={styles.answer}>
-                            <Text>A: {item.answer}</Text>
-                          </div>
-                        </div>
-                      </List.Item>
-                    )}
-                  />
-                )}
-              </div>
-            </>
-          )}
-        </div>
-      ),
-    }
+    //           <div className={styles.questionHistory}>
+    //             <Title level={4}>Question History</Title>
+    //             {questionHistory.length === 0 ? (
+    //               <Empty
+    //                 image={Empty.PRESENTED_IMAGE_SIMPLE}
+    //                 description="No questions asked yet"
+    //               />
+    //             ) : (
+    //               <List
+    //                 className={styles.questionList}
+    //                 itemLayout="vertical"
+    //                 dataSource={questionHistory}
+    //                 renderItem={item => (
+    //                   <List.Item>
+    //                     <div className={styles.questionItem}>
+    //                       <div className={styles.questionHeader}>
+    //                         <Text strong>Q: {item.question}</Text>
+    //                         <Text type="secondary">{item.timestamp}</Text>
+    //                       </div>
+    //                       <div className={styles.answer}>
+    //                         <Text>A: {item.answer}</Text>
+    //                       </div>
+    //                     </div>
+    //                   </List.Item>
+    //                 )}
+    //               />
+    //             )}
+    //           </div>
+    //         </>
+    //       )}
+    //     </div>
+    //   ),
+    // }
   ];
 
   return (
